@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&amp;family=Inter:wght@400;500&amp;display=swap');.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600}.sans{font-family:'Inter',Helvetica,Arial,sans-serif}</style>
+<rect width="512" height="512" rx="42" fill="#0C1F16"/>
+<rect x="46" y="46" width="420" height="420" fill="none" stroke="#C4A15E" stroke-width="8" rx="12"/>
+<rect x="76" y="76" width="360" height="360" fill="none" stroke="#C4A15E" stroke-width="2.5" opacity=".55" rx="6"/>
+<text x="256" y="160" text-anchor="middle" class="sans" font-size="23" letter-spacing="7" fill="#9DB4A6">AMBIENTAL</text>
+<text x="256" y="330" text-anchor="middle" class="serif" font-size="148" fill="#DCC08C">B<tspan font-size="104" fill="#C4A15E">&amp;</tspan>B</text>
+<text x="256" y="398" text-anchor="middle" class="sans" font-size="21" letter-spacing="9" fill="#C4A15E">DESDE 2003</text>
+</svg>

@@ -1,0 +1,42 @@
+BERNARDI & BERNARDI ADVOGADOS ASSOCIADOS
+PACOTE PARA FIREBASE HOSTING
+
+CONTEÚDO
+- public\index.html: site institucional completo.
+- public\privacidade.html: Política de Privacidade.
+- public\monograma-bb.svg: ícone e identidade visual.
+- public\og.png: imagem para compartilhamento.
+- firebase.json: configuração do Firebase Hosting.
+- DEPLOY_FIREBASE.ps1: publicação automatizada pelo PowerShell.
+
+COMO ATUALIZAR O SITE
+1. Extraia o ZIP para uma pasta exclusiva no computador.
+2. Faça as alterações necessárias dentro da pasta public.
+3. Não renomeie o arquivo public\index.html.
+4. Abra o PowerShell dentro da pasta extraída.
+5. Execute:
+
+   Set-ExecutionPolicy -Scope Process Bypass
+   .\DEPLOY_FIREBASE.ps1 -FirebaseProjectId "ID-DO-PROJETO-FIREBASE"
+
+Substitua ID-DO-PROJETO-FIREBASE pelo identificador correto do projeto.
+
+PRIMEIRO ACESSO
+Se o Firebase solicitar autenticação, execute:
+
+   firebase login
+
+Se o comando firebase não estiver instalado globalmente, execute:
+
+   npx --yes firebase-tools login
+
+Depois, repita o comando de deploy.
+
+FORMULÁRIOS
+O primeiro envio pelo formulário pode gerar uma confirmação no e-mail
+bernardi@bernardiadvogados.adv.br. Essa confirmação deve ser aprovada para
+que os próximos contatos sejam recebidos normalmente.
+
+DOMÍNIO
+A configuração do domínio personalizado deverá ser feita somente após o
+deploy definitivo no projeto Firebase correto.
