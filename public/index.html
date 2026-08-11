@@ -332,8 +332,9 @@
   .con-item b{display:block;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--dourado-claro);margin-bottom:6px;font-weight:500}
   .con-item,.con-item a{font-size:1.02rem;color:#D8E4DB;text-decoration:none}
   .con-item a:hover{color:var(--dourado-claro)}
-  footer{background:#081710;color:#7E9385;padding:34px 0;font-size:.78rem}
-  footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  footer{background:#081710;color:#7E9385;padding:34px 0;font-size:.78rem;text-align:center}
+  footer .container{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  footer .container span{width:100%}
 
   @media(max-width:1120px){
     .menu-btn{display:flex}
@@ -362,6 +363,9 @@
     #pop{width:calc(100vw - 40px);max-height:88dvh}
     #pop .pop-head{padding:34px 34px 24px}
     #pop .pop-corpo{padding:28px 34px 36px}
+    .alerta-box .tx,.alerta-box form{min-width:0;width:100%}
+    .alerta-box form{flex:1 0 100%;flex-direction:column}
+    .alerta-box input,.alerta-box button{width:100%;min-width:0;margin:0}
   }
   @media(max-width:720px){
     section{padding:60px 0}
@@ -943,7 +947,26 @@
   }
   menuBtn.addEventListener('click', alternarMenu);
   navBackdrop.addEventListener('click', fecharMenu);
-  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', fecharMenu));
+
+  /* No celular, cada item fecha o painel antes de navegar para sua ancora. */
+  navLinks.addEventListener('click', e => {
+    const link = e.target.closest('a[href^="#"]');
+    if(!link) return;
+    const destino = document.querySelector(link.getAttribute('href'));
+    if(!destino) return;
+
+    e.preventDefault();
+    fecharMenu();
+
+    const ancora = link.getAttribute('href');
+    const reduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    history.replaceState(null, '', ancora);
+    destino.scrollIntoView({
+      behavior: reduzirMovimento ? 'auto' : 'smooth',
+      block: 'start'
+    });
+  });
+  window.addEventListener('hashchange', fecharMenu);
   window.addEventListener('resize', () => { if(window.innerWidth > 1120) fecharMenu(); });
   document.addEventListener('keydown', e => { if(e.key === 'Escape') fecharMenu(); });
 
