@@ -1,42 +1,29 @@
 BERNARDI & BERNARDI ADVOGADOS ASSOCIADOS
 PACOTE PARA FIREBASE HOSTING
 
-CONTEÚDO
-- public\index.html: site institucional completo.
-- public\privacidade.html: Política de Privacidade.
-- public\monograma-bb.svg: ícone e identidade visual.
-- public\og.png: imagem para compartilhamento.
-- firebase.json: configuração do Firebase Hosting.
-- DEPLOY_FIREBASE.ps1: publicação automatizada pelo PowerShell.
+VERSÃO ATUALIZADA
+- Site completo em português, inglês e espanhol.
+- 30 páginas institucionais e artigos jurídicos.
+- Equipe atual: Zilto, Luciano, Ulisses, Carlos Eduardo e Clarice.
+- Menu hambúrguer e responsividade para celular e tablet.
+- Apresentação institucional para download direto.
+- WhatsApp do Dr. Zilto: +55 21 99916-6368.
+- Formulários enviados diretamente pelo site.
 
-COMO ATUALIZAR O SITE
-1. Extraia o ZIP para uma pasta exclusiva no computador.
-2. Faça as alterações necessárias dentro da pasta public.
-3. Não renomeie o arquivo public\index.html.
-4. Abra o PowerShell dentro da pasta extraída.
-5. Execute:
+COMO PUBLICAR NO WINDOWS POWERSHELL
+1. Abra a pasta C:\Users\Fernando\Desktop\Bernardi_Advogados_Firebase
+2. Execute:
 
-   Set-ExecutionPolicy -Scope Process Bypass
-   .\DEPLOY_FIREBASE.ps1 -FirebaseProjectId "ID-DO-PROJETO-FIREBASE"
+   Unblock-File .\DEPLOY_FIREBASE.ps1
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+   .\DEPLOY_FIREBASE.ps1 -FirebaseProjectId "bernardi-advogados-zilto-2026"
 
-Substitua ID-DO-PROJETO-FIREBASE pelo identificador correto do projeto.
-
-PRIMEIRO ACESSO
-Se o Firebase solicitar autenticação, execute:
-
-   firebase login
-
-Se o comando firebase não estiver instalado globalmente, execute:
-
-   npx --yes firebase-tools login
-
-Depois, repita o comando de deploy.
+O script somente mostra sucesso se o Firebase confirmar o deploy.
 
 FORMULÁRIOS
-O primeiro envio pelo formulário pode gerar uma confirmação no e-mail
-bernardi@bernardiadvogados.adv.br. Essa confirmação deve ser aprovada para
-que os próximos contatos sejam recebidos normalmente.
+O primeiro envio pode gerar uma confirmação no e-mail
+bernardi@bernardiadvogados.adv.br. Aprove a confirmação para liberar os
+próximos contatos.
 
 DOMÍNIO
-A configuração do domínio personalizado deverá ser feita somente após o
-deploy definitivo no projeto Firebase correto.
+O domínio personalizado deverá ser configurado somente após a aprovação final.

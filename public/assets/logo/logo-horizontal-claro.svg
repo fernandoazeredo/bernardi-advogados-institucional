@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 250">
+<g>
+  <rect x="30" y="45" width="160" height="160" fill="none" stroke="#C4A15E" stroke-width="3" rx="4"></rect>
+  <rect x="42" y="57" width="136" height="136" fill="none" stroke="#C4A15E" stroke-width="1" opacity=".55" rx="2"></rect>
+  <text x="110" y="148" text-anchor="middle" class="serif" font-size="58" fill="#FFFFFF">B<tspan font-size="42" fill="#C4A15E">&amp;</tspan>B</text>
+  <text x="110" y="184" text-anchor="middle" class="sans" font-size="12" letter-spacing="3" fill="#9DB4A6">DESDE 2003</text>
+</g>
+<text x="240" y="128" class="serif" font-size="72" letter-spacing="4" fill="#FFFFFF"><tspan font-size="81">B</tspan><tspan font-size="62">ERNARDI</tspan> <tspan font-size="56" fill="#C4A15E">&amp;</tspan> <tspan font-size="81">B</tspan><tspan font-size="62">ERNARDI</tspan></text>
+<line x1="244" y1="150" x2="1010" y2="150" stroke="#C4A15E" stroke-width="1.4"></line>
+<text x="244" y="186" class="sans" font-size="21" letter-spacing="10" fill="#9DB4A6">ADVOGADOS ASSOCIADOS</text>
+<text x="1010" y="186" text-anchor="end" class="sans" font-size="14" letter-spacing="4" fill="#C4A15E" opacity=".9">AMBIENTAL · DESDE 2003</text>
+</svg>

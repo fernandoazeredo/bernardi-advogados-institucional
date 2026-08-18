@@ -29,29 +29,18 @@ Write-Host "Validando acesso ao Firebase..." -ForegroundColor Cyan
 $FirebaseCommand = Get-Command firebase -ErrorAction SilentlyContinue
 if ($FirebaseCommand) {
     & firebase projects:list | Out-Null
-    if ($LASTEXITCODE -ne 0) {
-        throw "Não foi possível validar o acesso à conta Firebase."
-    }
+    if ($LASTEXITCODE -ne 0) { throw "Não foi possível validar o acesso à conta Firebase." }
     Write-Host "Publicando o site no Firebase Hosting..." -ForegroundColor Cyan
     & firebase deploy --only hosting --project $FirebaseProjectId
-    if ($LASTEXITCODE -ne 0) {
-        throw "O Firebase recusou o deploy. Nenhum sucesso foi registrado."
-    }
+    if ($LASTEXITCODE -ne 0) { throw "O Firebase recusou o deploy. Nenhum sucesso foi registrado." }
 } else {
     $NpxCommand = Get-Command npx -ErrorAction SilentlyContinue
-    if (-not $NpxCommand) {
-        throw "Node.js/NPX não foi encontrado. Instale o Node.js LTS antes de continuar."
-    }
-
+    if (-not $NpxCommand) { throw "Node.js/NPX não foi encontrado. Instale o Node.js LTS antes de continuar." }
     & npx --yes firebase-tools projects:list | Out-Null
-    if ($LASTEXITCODE -ne 0) {
-        throw "Não foi possível validar o acesso à conta Firebase."
-    }
+    if ($LASTEXITCODE -ne 0) { throw "Não foi possível validar o acesso à conta Firebase." }
     Write-Host "Publicando o site no Firebase Hosting..." -ForegroundColor Cyan
     & npx --yes firebase-tools deploy --only hosting --project $FirebaseProjectId
-    if ($LASTEXITCODE -ne 0) {
-        throw "O Firebase recusou o deploy. Nenhum sucesso foi registrado."
-    }
+    if ($LASTEXITCODE -ne 0) { throw "O Firebase recusou o deploy. Nenhum sucesso foi registrado." }
 }
 
 Write-Host "Deploy concluído com sucesso." -ForegroundColor Green

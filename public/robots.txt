@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.bernardiadvogados.adv.br/sitemap.xml
