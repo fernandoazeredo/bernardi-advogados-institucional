@@ -11,7 +11,7 @@ VERSÃO ATUALIZADA
 - Formulários enviados diretamente pelo site.
 
 COMO PUBLICAR NO WINDOWS POWERSHELL
-1. Abra a pasta C:\Users\Fernando\Desktop\Bernardi_Advogados_Firebase
+1. Abra a pasta D:\APLICATIVOS - DEPLOY\Bernardi_Advogados_Firebase
 2. Execute:
 
    Unblock-File .\DEPLOY_FIREBASE.ps1

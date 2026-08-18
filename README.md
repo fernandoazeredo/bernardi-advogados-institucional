@@ -7,7 +7,7 @@ Site institucional multilíngue do escritório Bernardi & Bernardi Advogados Ass
 Projeto Firebase exclusivo: `bernardi-advogados-zilto-2026`.
 
 ```powershell
-cd "C:\Users\Fernando\Desktop\Bernardi_Advogados_Firebase"
+cd "D:\APLICATIVOS - DEPLOY\Bernardi_Advogados_Firebase"
 Unblock-File .\DEPLOY_FIREBASE.ps1
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 .\DEPLOY_FIREBASE.ps1 -FirebaseProjectId "bernardi-advogados-zilto-2026"
