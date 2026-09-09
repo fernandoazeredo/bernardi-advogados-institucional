@@ -1,0 +1,57 @@
+/* Bernardi & Bernardi — responsividade crítica carregada antes do JavaScript. */
+html{max-width:100%;overflow-x:hidden;scroll-padding-top:90px}
+body{max-width:100%;overflow-x:hidden}
+img,svg,iframe{max-width:100%}
+
+/* Evita que os blocos apareçam e desapareçam durante o F5. */
+html.bb-js [data-reveal]{opacity:0;transform:translateY(24px)}
+
+@media (max-width:1120px){
+  nav{z-index:200!important}
+  nav>div{height:72px!important;flex-wrap:nowrap!important;padding-top:0!important;padding-bottom:0!important}
+  nav>div>a>span:last-child{max-width:220px}
+  nav>div>div:last-child,
+  .bb-nav-links{position:fixed!important;top:0;right:0;width:min(88vw,420px);height:100dvh;margin:0!important;padding:94px 28px 34px!important;background:linear-gradient(160deg,#FAF8F2 0%,#F2EEE3 100%)!important;border-left:2px solid #C6A66A;box-shadow:-18px 0 54px rgba(8,35,25,.24);display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:4px!important;overflow-y:auto;transform:translateX(105%);transition:transform .28s ease;z-index:201}
+  nav>div>div:last-child>a,
+  .bb-nav-links>a{display:flex!important;align-items:center!important;width:100%!important;min-height:52px!important;padding:13px 10px!important;border:0!important;border-bottom:1px solid rgba(30,70,52,.20)!important;text-align:left!important;color:#173F2E!important;font-size:.82rem!important;font-weight:600!important;letter-spacing:.12em!important}
+  nav>div>div:last-child>span,
+  .bb-nav-links>span{display:flex!important;width:100%!important;margin-top:14px!important;padding:20px 10px 0!important;border-left:0!important;border-top:1px solid rgba(126,91,34,.45)!important;gap:22px!important}
+  nav>div>div:last-child>span a,
+  nav>div>div:last-child>span span{color:#285E46!important;font-size:.76rem!important;font-weight:600!important}
+  .bb-menu-open .bb-nav-links{transform:translateX(0)}
+  #rail{display:none!important}
+}
+
+@media (max-width:820px){
+  [style*="grid-template-columns"]{grid-template-columns:1fr!important}
+  [style*="min-height:100vh"]{min-height:auto!important}
+  section{padding-top:62px!important;padding-bottom:62px!important}
+}
+
+@media (max-width:720px){
+  nav>div{height:68px!important;padding-left:16px!important;padding-right:16px!important}
+  nav>div>a{gap:9px!important}
+  nav>div>a>span:first-child{width:38px!important;height:38px!important}
+  nav>div>a>span:last-child>span:first-child{font-size:.88rem!important}
+  nav>div>a>span:last-child>span:last-child{font-size:.47rem!important;letter-spacing:.24em!important}
+  header{padding-top:118px!important;padding-bottom:58px!important}
+  header h1{font-size:clamp(1.9rem,10vw,2.7rem)!important;line-height:1.08!important}
+  header [style*="justify-content:center"][style*="flex-wrap:wrap"]{flex-direction:column!important;align-items:center!important}
+  header [style*="justify-content:center"][style*="flex-wrap:wrap"]>a{width:100%!important;max-width:360px!important;padding:14px 18px!important}
+  header [style*="grid-template-columns:repeat(2"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;margin-top:54px!important}
+  #socio,[id="socio-fundador"] article{grid-template-columns:1fr!important}
+  #socio>div:first-child,[id="socio-fundador"] article>div:first-child{width:100%!important;max-width:300px!important;margin:0 auto!important}
+  input,select,textarea{width:100%!important;max-width:100%!important;min-width:0!important;font-size:16px!important}
+  footer>div{flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;gap:12px!important}
+}
+
+@media (max-width:420px){
+  nav>div>a>span:last-child{display:none!important}
+  nav>div>div:last-child,.bb-nav-links{width:92vw!important;padding-left:20px!important;padding-right:20px!important}
+  [style*="max-width:1240px"],[style*="max-width:1000px"],[style*="max-width:900px"],[style*="max-width:840px"],[style*="max-width:820px"],[style*="max-width:800px"],[style*="max-width:780px"],[style*="max-width:760px"]{padding-left:16px!important;padding-right:16px!important}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  html.bb-js [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}
+}
