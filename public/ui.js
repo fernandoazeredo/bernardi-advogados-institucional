@@ -76,17 +76,18 @@
       whatsapp.href = WHATS + '?text=' + encodeURIComponent(whatsMessage);
       whatsapp.setAttribute('aria-label', 'WhatsApp — Dr. Zilto Bernardi Freitas');
       whatsapp.setAttribute('title', 'Falar com Dr. Zilto Bernardi Freitas');
-      whatsapp.style.width = '54px';
-      whatsapp.style.height = '54px';
+      whatsapp.style.width = '60px';
+      whatsapp.style.height = '60px';
       whatsapp.style.padding = '0';
       whatsapp.style.gap = '0';
       whatsapp.style.borderRadius = '50%';
       whatsapp.style.background = '#1FAE5B';
       whatsapp.style.color = '#FFFFFF';
-      whatsapp.style.borderColor = 'rgba(255,255,255,.45)';
+      whatsapp.style.border = '2px solid rgba(255,255,255,.72)';
+      whatsapp.style.boxShadow = '0 10px 28px rgba(0,0,0,.30)';
       whatsapp.style.fontSize = '.72rem';
       whatsapp.style.fontWeight = '500';
-      whatsapp.innerHTML = '<svg aria-hidden="true" viewBox="0 0 32 32" width="27" height="27" fill="currentColor"><path d="M16 3a12 12 0 0 0-10.3 18.2L4 28l7-1.6A12 12 0 1 0 16 3Zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.5-.3-3.3.8.8-3.2-.3-.5A9.7 9.7 0 1 1 16 24.8Zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3 2.2.9 3 .9 4.1.8.7-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4Z"/></svg>';
+      whatsapp.innerHTML = '<svg aria-hidden="true" viewBox="0 0 32 32" width="34" height="34" fill="currentColor" style="display:block"><path d="M16 3a12 12 0 0 0-10.3 18.2L4 28l7-1.6A12 12 0 1 0 16 3Zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.5-.3-3.3.8.8-3.2-.3-.5A9.7 9.7 0 1 1 16 24.8Zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3 2.2.9 3 .9 4.1.8.7-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4Z"/></svg>';
     }
 
     var button = document.createElement('button');
@@ -190,7 +191,7 @@
       '  .bb-news-form{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-width:0!important;width:100%!important;flex-basis:100%!important}',
       '  .bb-cookie-banner{padding:14px 16px!important;gap:12px!important;text-align:center!important}',
       '  .bb-cookie-banner button{width:100%!important;max-width:320px!important}',
-      '  a[aria-label^="WhatsApp"]{right:16px!important;bottom:16px!important;width:52px!important;height:52px!important}',
+      '  a[aria-label^="WhatsApp"]{right:16px!important;bottom:16px!important;width:58px!important;height:58px!important}',
       '  footer>div{flex-direction:column!important;align-items:center!important;gap:12px!important}',
       '}',
       '@media(max-width:420px){',
