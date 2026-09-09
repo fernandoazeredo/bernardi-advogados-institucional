@@ -76,6 +76,9 @@
       whatsapp.href = WHATS + '?text=' + encodeURIComponent(whatsMessage);
       whatsapp.setAttribute('aria-label', 'WhatsApp — Dr. Zilto Bernardi Freitas');
       whatsapp.setAttribute('title', 'Falar com Dr. Zilto Bernardi Freitas');
+      whatsapp.setAttribute('data-hover', 'background:#1FAE5B;color:#FFFFFF;border-color:rgba(255,255,255,.72)');
+      whatsapp.setAttribute('data-focus', 'background:#1FAE5B;color:#FFFFFF;border-color:rgba(255,255,255,.72)');
+      whatsapp.setAttribute('data-press', 'background:#1FAE5B;color:#FFFFFF;border-color:rgba(255,255,255,.72)');
       whatsapp.style.width = '60px';
       whatsapp.style.height = '60px';
       whatsapp.style.padding = '0';
