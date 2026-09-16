@@ -12,12 +12,12 @@
       eEmail: 'O e-mail informado parece incompleto. Verifique antes de enviar.',
       eDesc: 'Descreva a matéria em ao menos uma frase — isso permite direcionar o atendimento.',
       eLgpd: 'É necessário autorizar o tratamento dos dados para prosseguir.',
-      eNews: 'Informe um e-mail válido para receber o Alerta Regulatório.',
+      eNews: 'Informe um e-mail válido para receber o Informativo Jurídico.',
       tTitulo: 'Solicitação de avaliação preliminar', tNome: 'Nome', tEmpresa: 'Empresa', tEmail: 'E-mail',
       tTel: 'Telefone', tSetor: 'Setor', tNatureza: 'Natureza da matéria', tDesc: 'Descrição',
-      subject: 'Avaliação preliminar', newsSubject: 'Alerta Regulatório B&B — inscrição',
-      newsBody: 'Desejo receber o Alerta Regulatório.',
-      cvClosed: 'Ver trajetória completa  +', cvOpen: 'Recolher  −'
+      subject: 'Avaliação preliminar', newsSubject: 'Informativo Jurídico B&B — cadastro',
+      newsBody: 'Desejo receber os comunicados do Informativo Jurídico B&B.',
+      cvClosed: 'Ver trajetória  +', cvOpen: 'Recolher  −'
     },
     en: {
       ck: 'This site uses no tracking cookies. Only the map in the Contact section, provided by Google, may record browsing data.',
@@ -27,12 +27,12 @@
       eEmail: 'The e-mail address appears incomplete. Please check before sending.',
       eDesc: 'Please describe the matter in at least one sentence — this helps us direct your request.',
       eLgpd: 'You must authorise the processing of your data to proceed.',
-      eNews: 'Please provide a valid e-mail address to receive the Regulatory Alert.',
+      eNews: 'Please provide a valid e-mail address to receive the Legal Bulletin.',
       tTitulo: 'Request for preliminary assessment', tNome: 'Name', tEmpresa: 'Company', tEmail: 'E-mail',
       tTel: 'Phone', tSetor: 'Sector', tNatureza: 'Matter', tDesc: 'Description',
-      subject: 'Preliminary assessment', newsSubject: 'B&B Regulatory Alert — subscription',
-      newsBody: 'I would like to receive the Regulatory Alert.',
-      cvClosed: 'View full profile  +', cvOpen: 'Collapse  −'
+      subject: 'Preliminary assessment', newsSubject: 'B&B Legal Bulletin — registration',
+      newsBody: 'I would like to receive communications from the B&B Legal Bulletin.',
+      cvClosed: 'View profile  +', cvOpen: 'Collapse  −'
     },
     es: {
       ck: 'Este sitio no utiliza cookies de seguimiento. Solo el mapa de la sección Contacto, proporcionado por Google, puede registrar datos de navegación.',
@@ -42,12 +42,12 @@
       eEmail: 'El correo indicado parece incompleto. Verifíquelo antes de enviar.',
       eDesc: 'Describa el asunto en al menos una frase — eso permite dirigir la atención.',
       eLgpd: 'Es necesario autorizar el tratamiento de los datos para continuar.',
-      eNews: 'Indique un correo válido para recibir la Alerta Regulatoria.',
+      eNews: 'Indique un correo válido para recibir el Informativo Jurídico.',
       tTitulo: 'Solicitud de evaluación preliminar', tNome: 'Nombre', tEmpresa: 'Empresa', tEmail: 'E-mail',
       tTel: 'Teléfono', tSetor: 'Sector', tNatureza: 'Asunto', tDesc: 'Descripción',
-      subject: 'Evaluación preliminar', newsSubject: 'Alerta Regulatoria B&B — suscripción',
-      newsBody: 'Deseo recibir la Alerta Regulatoria.',
-      cvClosed: 'Ver trayectoria completa  +', cvOpen: 'Contraer  −'
+      subject: 'Evaluación preliminar', newsSubject: 'Informativo Jurídico B&B — registro',
+      newsBody: 'Deseo recibir los comunicados del Informativo Jurídico B&B.',
+      cvClosed: 'Ver trayectoria  +', cvOpen: 'Contraer  −'
     }
   }[L];
 
